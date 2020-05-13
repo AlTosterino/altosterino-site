@@ -1,0 +1,227 @@
+# Page settings
+
+baseURL = "http://altosterino.com/"
+languageCode = "en"
+title = "Daniel Różycki"
+theme = "hugo-devresume-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+
+
+
+
+
+[params]
+    author = "CowboySmall"
+    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
+
+
+    primaryColor = "#f04c40"
+    textPrimaryColor = "#292929"
+
+
+    [params.profile]
+        enable = true
+        name = "Daniel Różycki"
+        tagline = "Python Developer"
+        avatar = "avatar.png"
+
+    [params.contact]
+        enable = true
+        location = "Łódź, Poland"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:731155895"
+        text = "731 155 895"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:d.rozycki98@gmail.com"
+        text = "d.rozycki98@gmail.com"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://toastin.it/"
+        text = "https://toastin.it/"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "Python/Django/Django REST"
+        [[params.skills.list.items]]
+        details = "Flask/Scrapy/web3"
+        [[params.skills.list.items]]
+        details = "Pytest/Unittest/CI"
+        [[params.skills.list.items]]
+        details = "Git/GitHub/GitLab"
+        [[params.skills.list.items]]
+        details = "PostgreSQL/MySQL/MariaDB"
+        [[params.skills.list.items]]
+        details = "Apache2/Nginx"
+        [[params.skills.list.items]]
+        details = "GitLab CI/GitHub Actions/TravisCI/CircleCI/TeamCity"
+        [[params.skills.list.items]]
+        details = "Clean Architecture"
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Effective communication"
+        [[params.skills.list.items]]
+        details = "Team player"
+        [[params.skills.list.items]]
+        details = "Good time management"
+        [[params.skills.list.items]]
+        details = "Stubborn in pursuit of the goal"
+        [[params.skills.list.items]]
+        details = "Aiming to be better developer every day"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "IT Technician"
+        university = "KEN Upper Secondary School Complex No. 9"
+        dates = "09/2015 - 04/2018"
+
+    [params.awards]
+        enable = false
+
+        [[params.awards.list]]
+        name = "Award Lorem Ipsum"
+        body = "Microsoft lorem ipsum"
+        date = "2019"
+        [[params.awards.list]]
+        name = "Award Donec Sodales"
+        body = "Oracle Aenean"
+        date = "2017"
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "Polish"
+        level = "Native"
+        [[params.languages.list]]
+        name = "English"
+        level = "Professional Working Proficiency"
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Python"
+        [[params.interests.list]]
+        name = "Clean Architecture"
+        [[params.interests.list]]
+        name = "Games"
+        [[params.interests.list]]
+        name = "Music"
+
+
+    [params.summary]
+        enable = true
+        text = "Hello I'm Daniel, Python developer with more than one year of professional experience, specialized in web applications and automation of processes. I want to learn new things and become better software developer with every day. My main motivation for learning is to become Python Expert, and my dream job is to work as Software Architect. Right now I'm looking for new challenging opportunities in a job that I can develop professionally."
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Python Developer"
+        dates = "03/2020 - 05/2020"
+        company = "STX NEXT"
+        details = "I joined STX Next in March 2020, after two months of fighting for the job. The perspective of becoming better developer among expierenced coworkers was awesome. I was added to internal project that was focused on automation of the processes for the people from sales department. Sadly after roughly two months of work I have been fired due to coronavirus situation and the growing bench overtime."
+        [[params.experience.list.items]]
+        details = "Automation of internal processes written with clean architecture in mind using Python."
+        [[params.experience.list.items]]
+        details = "Webscraping using Python/Scrapy."
+        [[params.experience.list.items]]
+        details = "TOP 30 Project in Hack the Crisis hackathon"
+        [[params.experience.list.items]]
+        details = "Modification of internal systems placeholders."
+        [[params.experience.list.items]]
+        details = "Bug fixing, code testing and optimization."
+
+        [[params.experience.list]]
+        title = "Python Developer"
+        dates = "04/2019 - 02/2020"
+        company = "PHU DIANET"
+        details = "This was my first job as Python Developer. I have learnt a lot about Django framework and blockchain. I was responsible for developing, deploying and maintaining web applications - You can say that I was Full Stack developer - and yes, I was. All application logic and design was created by me. Administration of Linux and databases servers (MySQL/PostgreSQL/MariaDB) were daily basis. After six months of working I have started to learn on my own inlcuding best programming practices, usage of continuous integration and deployment, docker containers, agile methodology and clean architecture desing. Due to constant desire for self development I decided to quit job at PHU DIANET to raise my skills even higher."
+        [[params.experience.list.items]]
+        details = "Built an entire platform to create and maintain multiple ICOs based on subdomain name using Python/Django/Celery/web3"
+        [[params.experience.list.items]]
+        details = "Built API to manage Ethereum wallets and transactions for ICOs and stock exchange using Python/Django/web3 with Fernet encryption"
+        [[params.experience.list.items]]
+        details = "Developing and maintaining web applications including software based on blockchain technology (Mainly Ethereum, tokens on ERC-20 standard) using Python/Django/Celery/web3"
+        [[params.experience.list.items]]
+        details = "Implementation and administration of web applications based on Python/Django"  
+        [[params.experience.list.items]]
+        details = "Administration of Linux and database servers (MySQL, PostgreSQL and MariaDB)"
+
+
+        [[params.experience.list]]
+        title = "Technical Intern"
+        dates = "11/2017 - 1/2017"
+        company = "Technical University of Lodz - Information Technology Center"
+        details = "During 150 hours of intern work I saw how Technical University of Lodz was created from the inside and I was responsible of programming in Java and C++ (little private projects under the eye of workers at University). During intership I was also responsible for testing application based on machine learning."
+        [[params.experience.list.items]]
+        details = "Programming in Java and C++"
+        [[params.experience.list.items]]
+        details = "Testing application based on machine learning"
+        [[params.experience.list.items]]
+        details = "Helping with hardware issues"
+
+    [params.projects]
+        enable = false
+
+        [[params.projects.list]]
+        title = "Project Lorem Ipsum"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+
+        [[params.projects.list]]
+        title = "Project Sed Fringilla"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+        [[params.projects.list]]
+        title = "Project Praesent"
+        meta = "Open Source"
+        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+
+    [params.information]
+        enable = false
+
+        # [[params.information.list]]
+        # title = "Papers"
+        # [[params.information.list.items]]
+        # details = "2018 · Lorem Ipsum"
+        # [[params.information.list.items]]
+        # details = "2016 · Sed Fringilla"
+
+        [[params.information.list]]
+        title = "Interests"
+        details = "Climbing, Snowboarding, Photography, Travelling"
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "https://github.com/AlTosterino"
+        title = "AlTosterino"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "https://linkedin.com/in/daniel-rozycki"
+        title = "Daniel Różycki"
+        # [[params.social.list]]
+        # icon = "fab fa-twitter-square"
+        # url = "//twitter.com/username"
+        # title = "@username"
+
+
+
+
+
