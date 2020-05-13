@@ -1,6 +1,6 @@
 # Page settings
 
-baseURL = "http://altosterino.com/"
+baseURL = "https://altosterino.com/"
 languageCode = "en"
 title = "Daniel Różycki"
 theme = "hugo-devresume-theme"
