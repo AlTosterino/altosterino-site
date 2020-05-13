@@ -1,3 +1,5 @@
+dist: bionic
+
 before_install:
   - openssl aes-256-cbc -K $encrypted_dfdcfd5172af_key -iv $encrypted_dfdcfd5172af_iv
     -in deploy_key.enc -out ./deploy_key -d
@@ -6,9 +8,11 @@ before_install:
   - ssh-add deploy_key
 
 install:
-  - sudo apt install hugo
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.70.0/hugo_0.70.0_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb
 
 script:
+  - ls
   - hugo
 
 deploy:
