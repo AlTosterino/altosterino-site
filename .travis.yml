@@ -6,6 +6,7 @@ before_install:
   - ssh-add deploy_key
 
 install:
+  - sudo apt update
   - sudo apt install hugo
 
 script:
