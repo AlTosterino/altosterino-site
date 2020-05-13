@@ -10,6 +10,7 @@ install:
   - sudo apt install hugo
 
 script:
+  - ls
   - hugo
 
 deploy:
