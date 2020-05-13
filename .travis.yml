@@ -21,6 +21,6 @@ script:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public DEPLOY_USER@DEPLOY_HOST:/var/www/altosterino.com/html
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public $DEPLOY_USER@$DEPLOY_HOST:/var/www/altosterino.com/html
   on:
     branch: master
