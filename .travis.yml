@@ -1,5 +1,8 @@
 dist: bionic
 
+addons:
+  ssh_known_hosts: 51.38.129.95
+
 before_install:
   - openssl aes-256-cbc -K $encrypted_dfdcfd5172af_key -iv $encrypted_dfdcfd5172af_iv
     -in deploy_key.enc -out ./deploy_key -d
