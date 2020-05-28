@@ -123,16 +123,16 @@ googleAnalytics = "UA-XXXXXXX-Y"
 
     [params.summary]
         enable = true
-        text = "Hello I'm Daniel, Python developer with more than one year of professional experience, specialized in web applications and automation of processes. I want to learn new things and become better software developer with every day. My main motivation for learning is to become Python Expert, and my dream job is to work as Software Architect. Right now I'm looking for new challenging opportunities in a job that I can develop professionally."
+        text = "Hello I'm Daniel, Python developer with more than one year of professional experience, specialized in web applications and automation of processes. I want to learn new things and become better software developer with every day. My main motivation for learning is to become Python Expert, and my dream job is to work as Software Architect. I'm always looking for a new challenges."
 
     [params.experience]
         enable = true
 
         [[params.experience.list]]
         title = "Python Developer"
-        dates = "03/2020 - 05/2020"
+        dates = "03/2020 - Present"
         company = "STX NEXT"
-        details = "I joined STX Next in March 2020, after two months of fighting for the job. The perspective of becoming better developer among expierenced coworkers was awesome. I was added to internal project that was focused on automation of the processes for the people from sales department. Sadly after roughly two months of work I have been fired due to coronavirus situation and the growing bench overtime."
+        details = "I joined STX Next in March 2020, after two months of fighting for the job. The perspective of becoming better developer among expierenced coworkers was awesome. I was added to internal project that was focused on automation of the processes for the people from sales department."
         [[params.experience.list.items]]
         details = "Automation of internal processes written with clean architecture in mind using Python."
         [[params.experience.list.items]]
