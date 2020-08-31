@@ -17,8 +17,9 @@ script:
   - hugo
 
 deploy:
-  provider: script
+  provider: pages
+  repo: AlTosterino/altosterino.github.io
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/public/* $DEPLOY_USER@$DEPLOY_HOST:/var/www/altosterino.com/html
-  on:
-    branch: master
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: public
