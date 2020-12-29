@@ -1,21 +1,22 @@
 dist: bionic
 
 before_install:
-  - ssh-keyscan -H $DEPLOY_HOST 2>&1 | tee -a $HOME/.ssh/known_hosts
-  - openssl aes-256-cbc -K $encrypted_e6cc0fb2b8da_key -iv $encrypted_e6cc0fb2b8da_iv -in deploy_key.enc -out travis -d
-  - eval "$(ssh-agent -s)"
-  - chmod 600 deploy_key
-  - ssh-add deploy_key
+- openssl aes-256-cbc -K $encrypted_e6cc0fb2b8da_key -iv $encrypted_e6cc0fb2b8da_iv
+  -in deploy_key.enc -out ./deploy_key -d
+- ssh-keyscan -H $DEPLOY_HOST 2>&1 | tee -a $HOME/.ssh/known_hosts
+- eval "$(ssh-agent -s)"
+- chmod 600 deploy_key
+- ssh-add deploy_key
 
 services:
-  - docker
+- docker
 
 script:
-  - docker login -u $CANISTER_USER -p $CANISTER_PASS
-  - docker build -t cloud.canister.io:5000/altosterino/altosterino-site:latest
-  - docker push cloud.canister.io:5000/altosterino/altosterino-site:latest
+- docker login -u $CANISTER_USER -p $CANISTER_PASS
+- docker build -t cloud.canister.io:5000/altosterino/altosterino-site:latest
+- docker push cloud.canister.io:5000/altosterino/altosterino-site:latest
 
 deploy:
   provider: script
   skip_cleanup: true
-  script: ./deploy.sh
+  script: "./deploy.sh"
