@@ -11,7 +11,7 @@ services:
 - docker
 
 script:
-- echo "$CANISTER_PASS" | docker login -u $CANISTER_USER -password-stdin cloud.canister.io:5000
+- docker login -u $CANISTER_USER -p $CANISTER_PASS https://cloud.canister.io:5000
 - docker build -t cloud.canister.io:5000/altosterino/altosterino-site:latest
 - docker push cloud.canister.io:5000/altosterino/altosterino-site:latest
 
